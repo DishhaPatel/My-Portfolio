@@ -236,7 +236,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"].navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url(../src/Assets/img/Background.jpg);
+  background-image: url(../src/Assets/img/banner-bg.png);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -312,7 +312,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"].navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
-  background: url(./Assets/img/Background.jpg);
 }
 .skill-bx {
   background-color: rgb(13, 13, 29);
@@ -345,7 +344,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"].navbar-toggler-icon {
   top: 28%;
   position: absolute;
   bottom: 0;
-  width: 40%;
+  width: 60%;
   z-index: -4;
 }
 

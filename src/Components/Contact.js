@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Container, Row, Col } from "react-bootstrap";
-// import contactImg from "../assets/img/contact-img.svg";
+import contactImg from "../Assets/img/contact-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import { Icon } from "@iconify/react";
@@ -36,7 +36,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="contact" id="connect">
+    <section className="contact" id="contacts">
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
@@ -46,7 +46,7 @@ export const Contact = () => {
                   className={
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
-                  src={""}
+                  src={contactImg}
                   alt="Contact Us"
                 />
               )}

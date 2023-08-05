@@ -1,6 +1,5 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import Logo from "../Assets/img/Logo.jpg";
 import SocialLinks from "./SocialLinks";
 
 export const NavBar = () => {
@@ -28,14 +27,9 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home">
-          <img
-            src={Logo}
-            alt="Logo"
-            style={{ height: "40px", width: "70px" }}
-          ></img>
-          {/* &lt;DishAPatel /&gt; */}
-        </Navbar.Brand>
+        <a href="#home" className="text-decoration-none">
+          <h4 className="text-white">&lt;DishaPatel /&gt;</h4>
+        </a>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
@@ -73,7 +67,10 @@ export const NavBar = () => {
             <div className="social-icon">
               <SocialLinks />
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
+            <button
+              className="vvd"
+              onClick={() => window.location.assign("/#contacts")}
+            >
               <span>Let's Connect</span>
             </button>
           </span>

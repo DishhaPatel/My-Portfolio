@@ -1,16 +1,16 @@
-import meter1 from "../Assets/img/meter1.png";
-import meter2 from "../Assets/img/meter1.png";
-import meter3 from "../Assets/img/meter1.png";
+import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+import meter1 from "../Assets/img/meter1.svg";
+import meter2 from "../Assets/img/meter1.svg";
+import meter3 from "../Assets/img/meter1.svg";
 
-import { Container, Row, Col } from "react-bootstrap";
+import colorSharp from "../Assets/img/color-sharp2.png";
 
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -43,8 +43,8 @@ export const Skills = () => {
               <Carousel
                 responsive={responsive}
                 infinite={true}
-                className="owl-carousel owl-theme skill-slider">
-                    
+                className="owl-carousel owl-theme skill-slider"
+              >
                 <div className="item">
                   <img src={meter1} alt="Image" />
                   <h5>Web Development</h5>
@@ -66,7 +66,7 @@ export const Skills = () => {
           </Col>
         </Row>
       </Container>
-     
+      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   );
 };
