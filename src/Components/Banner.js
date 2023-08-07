@@ -47,22 +47,18 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Hello Folks</span>
             <h1>
               I'm <span className="wrap">{text}</span>
             </h1>
             <p>
-              Highly motivated and enthusiastic Full Stack Developer with
-              experience in designing, developing and maintaining web
-              applications using technologies such as JavaScript, React,
-              Node.js.
+              Detail-oriented Frontend Developer with a passion for crafting
+              visually appealing and user-friendly web applications. Proficient
+              in HTML, CSS, and JavaScript, with a focus on responsive design
+              and cross-browser compatibility.
             </p>
-          {/*   <button onClick={() => window.location.assign("/#contacts")}>
-              Let's Connect <ArrowRightCircle size={25} />
-            </button> */}
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={logoImg} alt="Header img" width="320" />
+            <img src={logoImg} alt="Header img" width="350" />
           </Col>
         </Row>
       </Container>
